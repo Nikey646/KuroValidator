@@ -13,7 +13,7 @@ Only composer is directly supported.
 }
 ```
 
-or run the command `composer require kurothing/kurovalidator 0.1.*`
+or run the command `composer require kurothing/kurovalidator=0.1.*`
 
 # Usage
 KuroValidator was designed with ease of use in mind, as such it takes 2 Parameters, Input Data and Configuration Data.
