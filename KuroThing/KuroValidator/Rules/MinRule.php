@@ -31,7 +31,7 @@ class MinRule implements IRule {
 	 * @return string
 	 */
 	public function getFailureMessage() {
-		return "%1\$s must be a minimum of \"{$this->minimum}\"";
+		return "%1\$s must be a minimum of {$this->minimum} characters.";
 	}
 
 	/**

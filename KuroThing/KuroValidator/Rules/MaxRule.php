@@ -31,7 +31,7 @@ class MaxRule implements IRule {
 	 * @return string
 	 */
 	public function getFailureMessage() {
-		return "%1\$s cannot be longer than {$this->maximum}";
+		return "%1\$s cannot be longer than {$this->maximum} characters.";
 	}
 
 	/**
