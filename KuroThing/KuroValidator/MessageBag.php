@@ -55,4 +55,8 @@ class MessageBag {
 		return $this->failures[$key];
 	}
 
+	public function errors() {
+		return $this->failures;
+	}
+
 }
