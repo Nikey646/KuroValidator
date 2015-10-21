@@ -1,0 +1,13 @@
+{
+  "name": "KuroThing/KuroValidator",
+  "type": "library",
+  "description": "Simple, Easy, and Powerful Validation Library",
+  "keywords": ["validation"],
+  "homepage": "https://github.com/Nikey646/KuroValidator",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "KuroThing\\": "KuroThing"
+    }
+  }
+}
