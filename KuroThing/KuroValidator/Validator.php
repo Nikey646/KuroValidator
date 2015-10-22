@@ -128,7 +128,7 @@ class Validator {
 				}
 
 				$overrides	= (isset($value[$rule])) ? $value[$rule] : null;
-				$value		= (isset($data[$field])) ? $data[$field] : null;
+				$newValue	= (isset($data[$field])) ? $data[$field] : null;
 				$callable	= $this->rules[$rule];
 				$conditions = ($conditions === null) ? null : $this->arrayToObject($conditions);
 
@@ -137,9 +137,9 @@ class Validator {
 				}
 
 				if ($callable instanceof AnonymousClass) {
-					$rulePasses = $this->callbacks[$rule]($conditions, $value, $data);
+					$rulePasses = $this->callbacks[$rule]($conditions, $newValue, $data);
 				} else {
-					$rulePasses = $callable($conditions, $value, $data);
+					$rulePasses = $callable($conditions, $newValue, $data);
 				}
 
 				$message	= (isset($overrides["message"])) ? $overrides["message"] : $callable->getFailureMessage();
